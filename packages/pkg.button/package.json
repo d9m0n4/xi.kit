@@ -30,6 +30,12 @@
   "publishConfig": {
     "access": "public"
   },
+  "exports": {
+    ".": {
+      "import": "./index.ts",
+      "require": "./dist/index.js"
+    }
+  },
   "author": "xi.effect",
   "description": "",
   "gitHead": "33022d3bd6e72a5ccc9097b187742f9139f7d905"

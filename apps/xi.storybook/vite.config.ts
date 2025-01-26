@@ -5,9 +5,13 @@ import react from '@vitejs/plugin-react';
 export default defineConfig({
   plugins: [react()],
   resolve: {
-    preserveSymlinks: true
+    // alias: {
+    //   // Указываем путь к исходным файлам пакета
+    //   '@xipkg/button': '../../packages/pkg.button',
+    // },
+    preserveSymlinks: true, // Обязательно для работы с исходниками при символических ссылках
   },
   optimizeDeps: {
-    include: ['@xipkg/button']
-  }
+    exclude: ['@xipkg/button'], // Исключаем из оптимизации
+  },
 });
