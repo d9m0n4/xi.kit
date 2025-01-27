@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { Button } from '@xipkg/button';
 import { action } from '@storybook/addon-actions';
+import { Button } from '@xipkg/button';
 
 const meta = {
   title: 'Components/Button',

@@ -7,9 +7,9 @@
     "module": "ESNext",
     "skipLibCheck": true,
     "baseUrl": ".",
-//    "paths": {
-//      "@xipkg/button": ["../../packages/pkg.button"],
-//    },
+    "paths": {
+      "@xipkg/*": ["../../packages/pkg.*/index.ts"]
+    },
 
     /* Bundler mode */
     "moduleResolution": "NodeNext",
