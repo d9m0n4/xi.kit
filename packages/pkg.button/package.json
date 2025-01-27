@@ -2,6 +2,7 @@
   "name": "@xipkg/button",
   "version": "2.2.0",
   "main": "./dist/index.js",
+  "module": "/index.ts",
   "types": "./dist/index.d.ts",
   "license": "MIT",
   "scripts": {
@@ -29,12 +30,6 @@
   },
   "publishConfig": {
     "access": "public"
-  },
-  "exports": {
-    ".": {
-      "import": "./index.ts",
-      "require": "./dist/index.js"
-    }
   },
   "author": "xi.effect",
   "description": "",
